@@ -6,8 +6,6 @@
 #define SQLITE_INPUT_BUFFER_H
 #include <stddef.h>
 #include <stdio.h>
-#include <sys/types.h>
-#include "definitions.h"
 
 typedef struct InputBuffer {
     char* buffer;

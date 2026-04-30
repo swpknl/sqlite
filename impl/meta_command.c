@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-MetaCommandResult do_meta_command(InputBuffer* input_buffer) {
+MetaCommandResult do_meta_command(const InputBuffer* input_buffer) {
     if (strcmp(input_buffer->buffer, EXIT_COMMAND) == 0) {
         exit(EXIT_SUCCESS);
         return META_COMMAND_SUCCESS;

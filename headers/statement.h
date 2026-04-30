@@ -17,7 +17,7 @@ typedef struct Statements {
     StatementType type;
 } Statement;
 
-PrepareResult prepare_statement(InputBuffer* input_buffer, Statement* statement);
-void execute_statement(Statement* statement);
+PrepareResult prepare_statement(const InputBuffer* input_buffer, Statement* statement);
+void execute_statement(const Statement* statement);
 
 #endif //SQLITE_STATEMENT_H

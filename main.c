@@ -4,14 +4,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-#include <stdlib.h>
 #include "headers/constants.h"
 #include "headers/input_buffer.h"
 #include "headers/statement.h"
 #include "headers/meta_command.h"
 #include "headers/definitions.h"
 
-int main(void) {
+int main() {
     InputBuffer* input_buffer = new_input_buffer();
     while (true) {
         print_prompt();
